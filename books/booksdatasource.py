@@ -16,6 +16,10 @@ class Author:
         self.birth_year = birth_year
         self.death_year = death_year
 
+    def __eq__(self, other):
+        ''' For simplicity, we're going to assume that no two authors have the same name. '''
+        return self.surname == other.surname and self.given_name == other.given_name
+
 class Book:
     def __init__(self, title='', publication_year=None, authors=[]):
         ''' Note that the self.authors instance variable is a list of
@@ -23,6 +27,12 @@ class Book:
         self.title = title
         self.publication_year = publication_year
         self.authors = authors
+
+    def __eq__(self, other):
+        ''' We're going to make the excessively simplifying assumption that
+            no two books have the same title, so "same title" is the same
+            thing as "same book". '''
+        return self.title == other.title
 
 class BooksDataSource:
     def __init__(self, books_csv_file_name):
