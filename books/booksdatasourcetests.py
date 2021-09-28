@@ -3,12 +3,12 @@
    Jeff Ondich, 24 September 2021
 '''
 
-import booksdatasource
+from booksdatasource import Author, Book, BooksDataSource
 import unittest
 
 class BooksDataSourceTester(unittest.TestCase):
     def setUp(self):
-        self.data_source = booksdatasource.BooksDataSource('books1.csv')
+        self.data_source = BooksDataSource('books1.csv')
 
     def tearDown(self):
         pass
