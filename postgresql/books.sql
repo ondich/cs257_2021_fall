@@ -68,7 +68,7 @@ COPY public.authors (id, last_name, first_name, birth_year, death_year) FROM std
 6	Pratchett	Terry	1948	2015
 7	Brontë	Charlotte	1816	1855
 8	Wodehouse	Pelham Grenville	1881	1975
-9	Márquez	Gabriel García	1927	2014
+9	García Márquez	Gabriel	1927	2014
 10	Lewis	Sinclair	1885	1951
 11	Rushdie	Salman	1947	\N
 12	Bujold	Lois McMaster	1949	\N
