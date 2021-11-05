@@ -39,7 +39,7 @@ function onCatsButton() {
             listBody += '<li>' + cat['name']
                       + ', ' + cat['birth_year']
                       + '-' + cat['death_year']
-                      + ', ' + cat['description'];
+                      + ', ' + cat['description']
                       + '</li>\n';
         }
 
@@ -68,7 +68,7 @@ function onDogsButton() {
             listBody += '<li>' + dog['name']
                       + ', ' + dog['birth_year']
                       + '-' + dog['death_year']
-                      + ', ' + dog['description'];
+                      + ', ' + dog['description']
                       + '</li>\n';
         }
 
