@@ -1,15 +1,14 @@
 '''
-    books_webapp.py
+    app.py
     Jeff Ondich, 25 April 2016
-    Updated 4 November 2020
+    Updated 5 November 2021
 
-    Tiny Flask API to support the tiny books web application.
+    Tiny Flask API to support a cats and dogs web application
+    that doesn't use a database.
 '''
-import sys
 import flask
 import json
 import config
-import psycopg2
 
 api = flask.Blueprint('api', __name__)
 
