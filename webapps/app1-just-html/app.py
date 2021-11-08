@@ -14,7 +14,7 @@ app = flask.Flask(__name__, static_folder='static', template_folder='templates')
 
 @app.route('/')
 def home():
-    return flask.render_template('index.html')
+    return flask.render_template('index.html', user_name='Jeff')
 
 @app.route('/about')
 def about():

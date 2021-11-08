@@ -1,7 +1,7 @@
 '''
-    books_webapp.py
+    api.py
     Jeff Ondich, 25 April 2016
-    Updated 4 November 2020
+    Updated 8 November 2021
 
     Tiny Flask API to support the tiny books web application.
 '''

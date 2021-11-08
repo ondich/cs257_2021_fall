@@ -10,7 +10,7 @@ This sample contains simple examples of all or nearly all of the techniques you 
 
 1. Running this example on your own machine
 
-(a) Set up the database of books and authors. See books-webapp/data/readme.txt for instructions.
+(a) Set up the database of books and authors. See app3-api-and-db/data/readme.txt for instructions.
 
 (b) Pick your port. I'll use 5000 in my examples
 

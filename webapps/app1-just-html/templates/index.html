@@ -9,6 +9,8 @@
 
 <body>
     <h1>The Just-HTML Web App Home Page</h1>
+    <p>Hi there, {{ user_name }}</p>
+
     <p>This is the home page, obtained via the "/" route
         from the Flask server.</p>
 
@@ -17,7 +19,8 @@
     if you wish.</p>
 
     <p>Here's a picture of Maisie and her penguin to make it all worthwhile.</p>
-    <img src="{{ url_for('static', filename='images/maisie.jpg') }}">
+    <img src="{{ url_for('static', filename='images/maisie.jpg') }}"
+         alt="Jeff's dog Maisie with her penguin toy">
 
 </body>
 </html>
