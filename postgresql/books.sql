@@ -26,8 +26,8 @@ SET default_table_access_method = heap;
 
 CREATE TABLE public.authors (
     id integer,
-    last_name text,
-    first_name text,
+    surname text,
+    given_name text,
     birth_year integer,
     death_year integer
 );
@@ -58,11 +58,10 @@ CREATE TABLE public.books_authors (
 -- Data for Name: authors; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.authors (id, last_name, first_name, birth_year, death_year) FROM stdin;
+COPY public.authors (id, surname, given_name, birth_year, death_year) FROM stdin;
 0	Willis	Connie	1945	\N
 1	Christie	Agatha	1890	1976
 2	Morrison	Toni	1931	\N
-3	Lewis	Sinclair	1885	\N
 4	Austen	Jane	1775	1817
 5	Gaiman	Neil	1960	\N
 6	Pratchett	Terry	1948	2015
@@ -127,7 +126,7 @@ COPY public.books_authors (book_id, author_id) FROM stdin;
 1	1
 2	2
 3	0
-4	3
+4	10
 5	4
 6	5
 6	6
